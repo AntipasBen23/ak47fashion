@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 
@@ -14,26 +14,31 @@ export default function NavBarTop() {
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
 
   return (
-    <div className="bg-gray-100 w-full text-sm text-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-end space-x-4">
+    <div className="bg-[#ebebeb] w-full text-sm text-[#53565A] font-sans h-[35px]">
+      <div className="flex items-center justify-end px-[60px] h-full space-x-4">
         <div className="flex items-center space-x-1 cursor-pointer hover:underline">
           <span className="text-xl">👤</span>
           <a href="#" className="hover:underline">Account</a>
         </div>
 
-        <span>|</span>
+        {/* Vertical divider */}
+        <div className="border-l h-full border-gray-400" />
+
         <a href="#" className="hover:underline">Accessibility Statement</a>
 
-        <span>|</span>
+        <div className="border-l h-full border-gray-400" />
+
         <a href="#" className="hover:underline">Help</a>
 
-        <span>|</span>
+        <div className="border-l h-full border-gray-400" />
+
         <a href="#" className="hover:underline">Email Sign Up</a>
 
-        <span>|</span>
+        <div className="border-l h-full border-gray-400" />
+
         <a href="#" className="hover:underline">Blog</a>
 
-        <span>|</span>
+        <div className="border-l h-full border-gray-400" />
 
         <select
           value={selectedCountry.code}
@@ -42,7 +47,7 @@ export default function NavBarTop() {
               countries.find(c => c.code === e.target.value) || countries[0]
             )
           }
-          className="bg-transparent outline-none"
+          className="bg-transparent outline-none cursor-pointer"
         >
           {countries.map((country) => (
             <option key={country.code} value={country.code}>
