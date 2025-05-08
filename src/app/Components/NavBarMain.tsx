@@ -6,7 +6,7 @@ import { FiSearch, FiHeart, FiUser, FiShoppingBag } from 'react-icons/fi';
 
 export default function NavBarMain() {
   return (
-    <div className="relative bg-white w-full h-[60px] flex items-center px-[60px] justify-between text-[#000000]">
+    <div className="relative bg-white w-full h-[100px] flex items-center px-[60px] justify-between text-[#000000]">
       {/* Left: Logo */}
       <div className="flex-shrink-0">
         <Image src="/logo.png" alt="AK47Fashion Logo" width={40} height={40} />

@@ -14,7 +14,7 @@ export default function NavBarTop() {
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
 
   return (
-    <div className="bg-[#ebebeb] w-full text-sm text-[#53565A] font-sans h-[35px]">
+    <div className="bg-[#ebebeb] w-full text-sm text-[#53565A] font-sans h-[50px]">
       <div className="flex items-center justify-end px-[60px] h-full space-x-4">
         <div className="flex items-center space-x-1 cursor-pointer hover:underline">
           <span className="text-xl">👤</span>
